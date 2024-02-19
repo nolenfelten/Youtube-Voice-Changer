@@ -2,12 +2,13 @@
 Use MetaVoice TTS to change a youtubers voice. 
 
 
-Step 1: Download Video and Closed Captions
+## Step 1: Download Video and Closed Captions
 yt-dlp
-Step 2: Process Captions and Segment Video
+
+## Step 2: Process Captions and Segment Video
 ffmpeg to mute video while saving parts of the video that the transcript dictates the size of to fit under MetaVoices character limit (220). The parts are named from the string of the transcript.
 
-Step 3: Generate Audio from Text
+## Step 3: Generate Audio from Text
 Use /tts endpoint to get audio file url that we download.
 
 '''
@@ -27,7 +28,7 @@ print(result)
 '''
 
 
-Step 4: Merge Audio with Video Segments
+## Step 4: Merge Audio with Video Segments
 FFMPEG conates with new audio.
 
 
